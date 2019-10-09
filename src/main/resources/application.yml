@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: dev
+  freemarker:
+    cache: false
+    request-context-attribute: request
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .ftl
+
+logging:
+  file: spring.log
+  level:
+    com:
+      hubu:
+        learn: DEBUG
+      jdbc: ERROR
+      jdbc.resultsettable: ERROR
+      org:
+        springframework: INFO
+        springframework.security: INFO
+      root: INFO
+
