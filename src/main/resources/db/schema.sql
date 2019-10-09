@@ -1,3 +1,5 @@
+set names utf8;
+
 DROP TABLE IF EXISTS `user_info`;
 CREATE TABLE `user_info`
 (

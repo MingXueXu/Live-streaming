@@ -28,4 +28,5 @@ public interface UserInfoDao extends JpaRepository<UserInfo,Long> {
   @Modifying
   @Query(value = "select * from user_info",nativeQuery = true)
   List<UserInfo> selectAll();
+
 }
