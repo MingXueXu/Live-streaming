@@ -1,7 +1,7 @@
 set names utf8;
 
-DROP TABLE IF EXISTS `user_info`;
-CREATE TABLE `user_info`
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`
 (
     `id`                     bigint(20) NOT NULL AUTO_INCREMENT,
     `username`               varchar(255) DEFAULT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE `user_info`
     `online`                 int(10)      default null,
     PRIMARY KEY (`id`)
 );
-ALTER TABLE `user_info` ADD UNIQUE (`username`);
+ALTER TABLE `user` ADD UNIQUE (`username`);
 
 DROP TABLE IF EXISTS `file`;
 CREATE TABLE `file` (

@@ -9,33 +9,33 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
-import edu.hubu.learn.dao.UserInfoDao;
-import edu.hubu.learn.entity.UserInfo;
+import edu.hubu.learn.dao.UserDao;
+import edu.hubu.learn.entity.User;
 
 @Service
 public class UserService {
 
     @Autowired
-    private UserInfoDao userDao;
+    private UserDao userDao;
 
-    public UserInfo getUser(Long id) {
+    public User getUser(Long id) {
         return userDao.findById(id).get();
     }
 
-    public List<UserInfo> getUsers() {
+    public List<User> getUsers() {
         return userDao.findAll(new Sort(Direction.DESC, "id"));
     }
 
-    public List<UserInfo> searchUsers(String keyword) {
-        UserInfo user = new UserInfo();
+    public List<User> searchUsers(String keyword) {
+        User user = new User();
         user.setUsername(keyword);
         ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("username", match->match.contains());
-        Example<UserInfo> example = Example.of(user, matcher);
+        Example<User> example = Example.of(user, matcher);
         Sort sort = new Sort(Direction.DESC, "id");
         return userDao.findAll(example, sort);
     }
 
-    public UserInfo addUser(UserInfo user) {
+    public User addUser(User user) {
         return userDao.save(user);
     }
 
@@ -43,7 +43,7 @@ public class UserService {
         userDao.deleteById(id);
     }
 
-    public void modifyUser(UserInfo user) {
+    public void modifyUser(User user) {
         userDao.save(user);
     }
 }

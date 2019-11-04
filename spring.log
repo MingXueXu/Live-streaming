@@ -111,3 +111,33 @@ ALTER TABLE `user_info` ADD UNIQUE (`email`) [42122-199]
 	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:488) ~[spring-jdbc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
 	... 57 common frames omitted
 
+2019-11-04 21:31:31.178  INFO 38476 --- [restartedMain] edu.hubu.learn.Application               : Starting Application on DESKTOP-U11T19U with PID 38476 (C:\Users\Administrator.DESKTOP-U11T19U\Desktop\javaprogram2\build\classes\java\main started by Administrator in C:\Users\Administrator.DESKTOP-U11T19U\Desktop\javaprogram2)
+2019-11-04 21:31:31.182  INFO 38476 --- [restartedMain] edu.hubu.learn.Application               : The following profiles are active: dev
+2019-11-04 21:31:31.314  INFO 38476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-04 21:31:31.314  INFO 38476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-04 21:31:35.375  INFO 38476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-04 21:31:35.644  INFO 38476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236ms. Found 2 repository interfaces.
+2019-11-04 21:31:37.081  INFO 38476 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b84b6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-04 21:31:38.887  INFO 38476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-11-04 21:31:38.963  INFO 38476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-04 21:31:38.964  INFO 38476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-11-04 21:31:39.306  INFO 38476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-04 21:31:39.307  INFO 38476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7993 ms
+2019-11-04 21:31:39.623  INFO 38476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-04 21:31:40.318  INFO 38476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-04 21:31:40.526  INFO 38476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-04 21:31:41.104  INFO 38476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-04 21:31:41.297  INFO 38476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-11-04 21:31:41.302  INFO 38476 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-04 21:31:41.801  INFO 38476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-04 21:31:42.161  INFO 38476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-11-04 21:31:44.167  INFO 38476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-04 21:31:47.895  INFO 38476 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-04 21:31:49.754  WARN 38476 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-04 21:31:51.879  INFO 38476 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-04 21:31:52.002  INFO 38476 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-04 21:31:52.136  INFO 38476 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-04 21:31:52.899  INFO 38476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-11-04 21:31:52.908  INFO 38476 --- [restartedMain] edu.hubu.learn.Application               : Started Application in 22.907 seconds (JVM running for 25.389)
