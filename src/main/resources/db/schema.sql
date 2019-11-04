@@ -18,3 +18,14 @@ CREATE TABLE `user_info`
     `online`                 int(10)      default null,
     PRIMARY KEY (`id`)
 );
+ALTER TABLE `user_info` ADD UNIQUE (`username`);
+ALTER TABLE `user_info` ADD UNIQUE (`email`);
+ALTER TABLE `user_info` ADD UNIQUE (`phone`);
+
+DROP TABLE IF EXISTS `file`;
+CREATE TABLE `file` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL comment '文件名',
+  PRIMARY KEY (`id`)
+);
+ALTER TABLE `file` ADD UNIQUE (`id`);
