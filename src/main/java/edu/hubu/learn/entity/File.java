@@ -13,4 +13,6 @@ public class File {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String classification;
+    private String publish_time;
 }

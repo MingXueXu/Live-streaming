@@ -25,6 +25,8 @@ DROP TABLE IF EXISTS `file`;
 CREATE TABLE `file` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL comment '文件名',
+  `classification` varchar(50) DEFAULT NULL comment '视频分类',
+  `publish_time` DATETIME NOT NULL comment '视频发布时间',
   PRIMARY KEY (`id`)
 );
 ALTER TABLE `file` ADD UNIQUE (`id`);
