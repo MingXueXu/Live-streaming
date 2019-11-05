@@ -49,8 +49,21 @@ CREATE TABLE `video_manage` (
   `classify_id` varchar(50) DEFAULT NULL comment '分类ID',
   `classify` varchar(50) DEFAULT NULL comment '分类名称',
   `discuss_user` varchar(50) DEFAULT NULL comment '讨论人',
-  `discuss_content` varchar(50) DEFAULT NULL comment '讨论人',
+  `discuss_content` varchar(50) DEFAULT NULL comment '讨论内容',
   PRIMARY KEY (`id`)
 )
 ALTER TABLE `video_manage` ADD UNIQUE (`id`);
+
 ALTER TABLE `video_manage` ADD UNIQUE (`classify_id`);
+
+DROP TABLE IF EXISTS `user_master_manage`;
+CREATE TABLE `user_master_manage` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL comment '用户名',
+  `collect_video` varchar(50) DEFAULT NULL comment '用户收藏视频',
+  `thumb_video` varchar(50) DEFAULT NULL comment '用户点赞视频',
+  `flower_video` varchar(50) DEFAULT NULL comment '用户送花视频',
+  `history_view_video` varchar(50) DEFAULT NULL comment '用户观看历史视频',
+  PRIMARY KEY (`id`)
+)
+ALTER TABLE `video_manage` ADD UNIQUE (`id`);
