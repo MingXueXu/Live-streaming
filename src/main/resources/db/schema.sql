@@ -29,4 +29,16 @@ CREATE TABLE `file` (
   `publish_time` DATETIME NOT NULL comment '视频发布时间',
   PRIMARY KEY (`id`)
 );
+
 ALTER TABLE `file` ADD UNIQUE (`id`);
+
+DROP TABLE IF EXISTS `video_info`;
+CREATE TABLE `video_info` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `thumb_number` varchar(50) DEFAULT NULL comment '视频点赞数',
+  `flower_number` varchar(50) DEFAULT NULL comment '视频送花数',
+  `collect_number` varchar(50) DEFAULT NULL comment '收藏量',
+  `broadcast_number`varchar(50) DEFAULT NULL comment '点播放量',
+  PRIMARY KEY (`id`)
+)
+ALTER TABLE `video_info` ADD UNIQUE (`id`);
