@@ -10,4 +10,8 @@ INSERT INTO `file` (id,name,classification,publish_time) VALUES ('1','file1','�
 INSERT INTO `file` (id,name,classification,publish_time) VALUES ('2','file2','类别1','2000-7-26 22:56:32');
 INSERT INTO `file` (id,name,classification,publish_time) VALUES ('3','file3','类别2','2000-7-27 22:56:32');
 INSERT INTO `file` (id,name,classification,publish_time) VALUES ('4','file4','类别2','2000-7-28 22:56:32');
+INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast_number) VALUES ('1','111','111','111','111');
+INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast_number) VALUES ('2','222','222','222','222');
+INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast_number) VALUES ('3','333','333','333','333');
+INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast_number) VALUES ('4','444','444','444','444');
 commit;

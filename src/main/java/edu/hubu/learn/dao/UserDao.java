@@ -26,7 +26,7 @@ public interface UserDao extends JpaRepository<User,Long> {
    * @return List<UserInfo>
    */
   @Modifying
-  @Query(value = "select * from user_info",nativeQuery = true)
+  @Query(value = "select * from user",nativeQuery = true)
   List<User> selectAll();
 
   
