@@ -10,7 +10,7 @@ CREATE TABLE `user`
     `user_img_url`           varchar(255) DEFAULT NULL,
     `sex`                    varchar(255) DEFAULT NULL,
     `city`                   varchar(255) DEFAULT NULL,
-    `school`                 varchar(255) DEFAULT NULL,
+    `years`                 varchar(255) DEFAULT NULL,
     `academy`                varchar(255) DEFAULT NULL,
     `major`                  varchar(255) DEFAULT NULL,
     `personalized_signature` varchar(255) DEFAULT NULL,
@@ -18,6 +18,7 @@ CREATE TABLE `user`
     `online`                 int(10)      default null,
     PRIMARY KEY (`id`)
 );
+
 ALTER TABLE `user` ADD UNIQUE (`username`);
 
 DROP TABLE IF EXISTS `file`;

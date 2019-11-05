@@ -33,7 +33,7 @@ public class User {
 
     private String city;
 
-    private String school;
+    private String years;
 
     private String academy;
 
@@ -100,12 +100,12 @@ public class User {
         this.city = city == null ? null : city.trim();
     }
 
-    public String getSchool() {
-        return school;
+    public String getYears() {
+        return years;
     }
 
-    public void setSchool(String school) {
-        this.school = school == null ? null : school.trim();
+    public void setYears(String Years) {
+        this.years = years == null ? null : Years.trim();
     }
 
     public String getAcademy() {
