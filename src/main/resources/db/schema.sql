@@ -42,3 +42,15 @@ CREATE TABLE `video_info` (
   PRIMARY KEY (`id`)
 )
 ALTER TABLE `video_info` ADD UNIQUE (`id`);
+
+DROP TABLE IF EXISTS `video_manage`;
+CREATE TABLE `video_manage` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `classify_id` varchar(50) DEFAULT NULL comment '分类ID',
+  `classify` varchar(50) DEFAULT NULL comment '分类名称',
+  `discuss_user` varchar(50) DEFAULT NULL comment '讨论人',
+  `discuss_content` varchar(50) DEFAULT NULL comment '讨论人',
+  PRIMARY KEY (`id`)
+)
+ALTER TABLE `video_manage` ADD UNIQUE (`id`);
+ALTER TABLE `video_manage` ADD UNIQUE (`classify_id`);
