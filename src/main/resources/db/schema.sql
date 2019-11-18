@@ -38,7 +38,7 @@ CREATE TABLE `video_info` (
   `thumb_number` varchar(50) DEFAULT NULL comment '视频点赞数',
   `flower_number` varchar(50) DEFAULT NULL comment '视频送花数',
   `collect_number` varchar(50) DEFAULT NULL comment '收藏量',
-  `broadcast_number`varchar(50) DEFAULT NULL comment '点播放量',
+  `broadcast_number`varchar(50) DEFAULT NULL comment '点击播放量',
   PRIMARY KEY (`id`)
 )
 ALTER TABLE `video_info` ADD UNIQUE (`id`);

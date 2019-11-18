@@ -14,4 +14,11 @@ INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast
 INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast_number) VALUES ('2','222','222','222','222');
 INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast_number) VALUES ('3','333','333','333','333');
 INSERT INTO `video_info` (id,thumb_number,flower_number,collect_number,broadcast_number) VALUES ('4','444','444','444','444');
+INSERT INTO `video_manage` (id,classify_id,classify,discuss_user,discuss_content) VALUES ('1','1','教育','111','111的讨论内容');
+INSERT INTO `video_manage` (id,classify_id,classify,discuss_user,discuss_content) VALUES ('2','2','娱乐','222','222的讨论内容');
+INSERT INTO `video_manage` (id,classify_id,classify,discuss_user,discuss_content) VALUES ('3','3','生活','abc','abc的讨论内容');
+INSERT INTO `user_master_manage` (id,username,collect_video,thumb_video,flower_video,history_view_video) VALUES ('1','111','1','1','1','1');
+INSERT INTO `user_master_manage` (id,username,collect_video,thumb_video,flower_video,history_view_video) VALUES ('2','222','2','2','2','2');
+INSERT INTO `user_master_manage` (id,username,collect_video,thumb_video,flower_video,history_view_video) VALUES ('3','abc','3','3','3','3');
+
 commit;
