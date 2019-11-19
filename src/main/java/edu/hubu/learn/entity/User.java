@@ -14,8 +14,8 @@ import javax.persistence.Table;
  */
 @Data
 @Entity
-@Table(name = "user_info")
-public class UserInfo {
+@Table(name = "user")
+public class User {
 
 
     @Id
@@ -33,7 +33,7 @@ public class UserInfo {
 
     private String city;
 
-    private String school;
+    private String years;
 
     private String academy;
 
@@ -100,12 +100,12 @@ public class UserInfo {
         this.city = city == null ? null : city.trim();
     }
 
-    public String getSchool() {
-        return school;
+    public String getYears() {
+        return years;
     }
 
-    public void setSchool(String school) {
-        this.school = school == null ? null : school.trim();
+    public void setYears(String Years) {
+        this.years = years == null ? null : Years.trim();
     }
 
     public String getAcademy() {
@@ -139,4 +139,7 @@ public class UserInfo {
     public void setPersonalizedLables(String personalizedLables) {
         this.personalizedLabels = personalizedLables == null ? null : personalizedLables.trim();
     }
+
+	public void setAvatar(String fileName) {
+	}
 }
