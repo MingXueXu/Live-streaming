@@ -6,7 +6,7 @@ public class DateAndTime {
 
     public DateAndTime(Date date){
 // 是对
-        System.out.println("test time: 测试时间爱你"+date);
+        System.out.println("test time: 测试时间"+date);
     }
     public static void main(String[] args){
 //
