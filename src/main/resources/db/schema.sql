@@ -10,7 +10,7 @@ CREATE TABLE `user`
     `user_img_url`           varchar(255) DEFAULT NULL,
     `sex`                    varchar(255) DEFAULT NULL,
     `city`                   varchar(255) DEFAULT NULL,
-    `years`                 varchar(255) DEFAULT NULL,
+    `years`                  varchar(255) DEFAULT NULL,
     `academy`                varchar(255) DEFAULT NULL,
     `major`                  varchar(255) DEFAULT NULL,
     `personalized_signature` varchar(255) DEFAULT NULL,
@@ -24,9 +24,9 @@ ALTER TABLE `user` ADD UNIQUE (`username`);
 DROP TABLE IF EXISTS `file`;
 CREATE TABLE `file` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) DEFAULT NULL comment '文件名',
-  `classification` varchar(50) DEFAULT NULL comment '视频分类',
-  `publish_time` DATETIME NOT NULL comment '视频发布时间',
+  `name`                varchar(50) DEFAULT NULL comment '文件名',
+  `classification`      varchar(50) DEFAULT NULL comment '视频分类',
+  `publish_time`        DATETIME NOT NULL comment '视频发布时间',
   PRIMARY KEY (`id`)
 );
 
@@ -34,13 +34,13 @@ ALTER TABLE `file` ADD UNIQUE (`id`);
 
 DROP TABLE IF EXISTS `video_info`;
 CREATE TABLE `video_info` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `thumb_number` varchar(50) DEFAULT NULL comment '视频点赞数',
-  `flower_number` varchar(50) DEFAULT NULL comment '视频送花数',
-  `collect_number` varchar(50) DEFAULT NULL comment '收藏量',
-  `broadcast_number`varchar(50) DEFAULT NULL comment '点击播放量',
+  `id`                   bigint(20) NOT NULL AUTO_INCREMENT,
+  `thumb_number`         varchar(50) DEFAULT NULL comment '视频点赞数',
+  `flower_number`        varchar(50) DEFAULT NULL comment '视频送花数',
+  `collect_number`       varchar(50) DEFAULT NULL comment '收藏量',
+  `broadcast_number`     varchar(50) DEFAULT NULL comment '点击播放量',
   PRIMARY KEY (`id`)
-)
+);
 ALTER TABLE `video_info` ADD UNIQUE (`id`);
 
 DROP TABLE IF EXISTS `video_manage`;
@@ -51,7 +51,7 @@ CREATE TABLE `video_manage` (
   `discuss_user` varchar(50) DEFAULT NULL comment '讨论人',
   `discuss_content` varchar(50) DEFAULT NULL comment '讨论内容',
   PRIMARY KEY (`id`)
-)
+);
 ALTER TABLE `video_manage` ADD UNIQUE (`id`);
 
 ALTER TABLE `video_manage` ADD UNIQUE (`classify_id`);
@@ -65,5 +65,5 @@ CREATE TABLE `user_master_manage` (
   `flower_video` varchar(50) DEFAULT NULL comment '用户送花视频',
   `history_view_video` varchar(50) DEFAULT NULL comment '用户观看历史视频',
   PRIMARY KEY (`id`)
-)
+);
 ALTER TABLE `video_manage` ADD UNIQUE (`id`);
