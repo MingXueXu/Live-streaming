@@ -40,7 +40,7 @@ CREATE TABLE `video_info` (
   `collect_number` varchar(50) DEFAULT NULL comment '收藏量',
   `broadcast_number`varchar(50) DEFAULT NULL comment '点击播放量',
   PRIMARY KEY (`id`)
-)
+);
 ALTER TABLE `video_info` ADD UNIQUE (`id`);
 
 DROP TABLE IF EXISTS `video_manage`;
@@ -51,7 +51,7 @@ CREATE TABLE `video_manage` (
   `discuss_user` varchar(50) DEFAULT NULL comment '讨论人',
   `discuss_content` varchar(50) DEFAULT NULL comment '讨论内容',
   PRIMARY KEY (`id`)
-)
+);
 ALTER TABLE `video_manage` ADD UNIQUE (`id`);
 
 ALTER TABLE `video_manage` ADD UNIQUE (`classify_id`);
@@ -65,5 +65,5 @@ CREATE TABLE `user_master_manage` (
   `flower_video` varchar(50) DEFAULT NULL comment '用户送花视频',
   `history_view_video` varchar(50) DEFAULT NULL comment '用户观看历史视频',
   PRIMARY KEY (`id`)
-)
+);
 ALTER TABLE `video_manage` ADD UNIQUE (`id`);
