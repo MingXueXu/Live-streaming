@@ -7,20 +7,20 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
-import edu.hubu.learn.dao.FileDao;
-import edu.hubu.learn.entity.File;
+import edu.hubu.learn.dao.CommentDao;
+import edu.hubu.learn.entity.Comment;
 
 @Service
-public class FileService {
+public class CommentService {
 
     @Autowired
-    private FileDao dao;
+    private CommentDao dao;
 
-    public File getFile(Long id) {
+    public Comment getComment(Long id) {
         return dao.findById(id).get();
     }
 
-    public List<File> getFiles() {
+    public List<Comment> getComments() {
         return dao.findAll(new Sort(Direction.DESC, "id"));
     }
     

@@ -5,14 +5,13 @@ import javax.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "file")
+@Table(name = "watchinghistory")
 @Data
-public class File {
+public class Watchinghistory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String classification;
-    private String publish_time;
+    private String videoid;
+    private String username;
 }

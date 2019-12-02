@@ -114,7 +114,7 @@ public class UserController {
             log.info(dest.getAbsolutePath());
             file.transferTo(dest);
             User user = userService.getUser(id);
-            user.setAvatar(fileName);
+            // user.setAvatar(fileName); 未实现该功能
             userService.modifyUser(user);
         } catch (Exception e) {
             log.error("upload avatar error", e.getMessage());

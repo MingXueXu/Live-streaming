@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 /**
  * @moduleName UserInfo
- * @description 对应数据库 user_info 表，保存用户信息
+ * @description 对应数据库 user 表，保存用户信息
  *
  * @author 杨睿
  */
@@ -31,17 +31,7 @@ public class User {
 
     private String sex;
 
-    private String city;
-
-    private String years;
-
-    private String academy;
-
-    private String major;
-
-    private String personalizedSignature;
-
-    private String personalizedLabels;
+    private String age;
 
     private String online;
 
@@ -92,54 +82,12 @@ public class User {
         this.sex = sex == null ? null : sex.trim();
     }
 
-    public String getCity() {
-        return city;
+    public String getonline() {
+        return online;
     }
 
-    public void setCity(String city) {
-        this.city = city == null ? null : city.trim();
+    public void setonline(String online) {
+        this.online = online == null ? null : online.trim();
     }
 
-    public String getYears() {
-        return years;
-    }
-
-    public void setYears(String Years) {
-        this.years = years == null ? null : Years.trim();
-    }
-
-    public String getAcademy() {
-        return academy;
-    }
-
-    public void setAcademy(String academy) {
-        this.academy = academy == null ? null : academy.trim();
-    }
-
-    public String getMajor() {
-        return major;
-    }
-
-    public void setMajor(String major) {
-        this.major = major == null ? null : major.trim();
-    }
-
-    public String getPersonalizedSignature() {
-        return personalizedSignature;
-    }
-
-    public void setPersonalizedSignature(String personalizedSignature) {
-        this.personalizedSignature = personalizedSignature == null ? null : personalizedSignature.trim();
-    }
-
-    public String getPersonalizedLables() {
-        return personalizedLabels;
-    }
-
-    public void setPersonalizedLables(String personalizedLables) {
-        this.personalizedLabels = personalizedLables == null ? null : personalizedLables.trim();
-    }
-
-	public void setAvatar(String fileName) {
-	}
 }

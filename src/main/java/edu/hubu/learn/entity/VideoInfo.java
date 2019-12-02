@@ -12,14 +12,19 @@ public class VideoInfo {
     @Id
     private long id;
 
-    private String thumb_number;
+    private String name;
 
-    private String flower_number;
+    private String type;
 
-    private String collect_number;
+    private String url;
     
-    private String broadcast_number;
+    private String uploader;
 
+    private String like;
+
+    private String collection;
+    
+    private String time;
 
     public long getId() {
         return id;
@@ -29,35 +34,49 @@ public class VideoInfo {
         this.id = id;
     }
 
-    public String getThumb_number() {
-        return thumb_number;
+    public String getnName() {
+        return name;
     }
 
-    public void setThumb_number(String thumb_number) {
-        this.thumb_number = thumb_number;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public String getFlower_number() {
-        return flower_number;
+    public String getUrl() {
+        return url;
     }
 
-    public void setFlower_number(String flower_number) {
-        this.flower_number = flower_number;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
-    public String getCollect_number() {
-        return collect_number;
+    public String getUploader() {
+        return uploader;
     }
 
-    public void setCollect_number(String collect_number) {
-        this.collect_number = collect_number;
+    public void setUploaderr(String uploader) {
+        this.uploader = uploader;
     }
 
-    public String getBroadcast_number() {
-        return broadcast_number;
+    public String getLike() {
+        return like;
     }
 
-    public void setBroadcast_number(String broadcast_number) {
-        this.broadcast_number = broadcast_number;
+    public void setLike(String like) {
+        this.like = like;
+    }
+    public String getCollection() {
+        return collection;
+    }
+
+    public void setCollection(String collection) {
+        this.collection = collection;
+    }
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }
