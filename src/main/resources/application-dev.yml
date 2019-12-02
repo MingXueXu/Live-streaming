@@ -3,7 +3,7 @@ spring:
     data: classpath:db/data.sql
     schema: classpath:db/schema.sql
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:D:\JavaProgram\H2Database/demo;MODE=MySql;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1
     username: root
     password: root
   jpa:
