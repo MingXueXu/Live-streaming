@@ -1,6 +1,3 @@
--- ----------------------------
--- Records of user_detail_info
--- ----------------------------
 set names utf8;
 INSERT INTO `user` VALUES (1, 'name', '111', 'nikename', 'URL', '男', '11', '1');
 INSERT INTO `videoinfo` VALUES (1, 'name', 'type', 'url', 'uploader', '男', 'like', 'collection', 2000-1-1 00:00:00);
