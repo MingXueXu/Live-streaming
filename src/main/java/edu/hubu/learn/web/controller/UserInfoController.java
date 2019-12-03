@@ -2,13 +2,11 @@ package edu.hubu.learn.web.controller;
 
 import edu.hubu.learn.entity.UserInfo;
 import edu.hubu.learn.web.service.UserInfoService;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import static edu.hubu.learn.util.PageConstant.CURRENT_PAGE;
+import static edu.hubu.learn.util.PageConstant.PAGE_SIZE;
 
 /**
  * @moduleName UserInfoController
@@ -23,9 +21,11 @@ public class UserInfoController {
   @Autowired
   UserInfoService userInfoService;
 
-  @ApiOperation(value = "查询全部数据")
-  @GetMapping(value = "selectAll")
-  public List<UserInfo> selectAll(){
-    return userInfoService.selectAll();
+  @PutMapping(value = "insert")
+  public int insert(@RequestBody UserInfo userInfo){
+    userInfoService.insert(userInfo);
+    return 1;
   }
+
+
 }

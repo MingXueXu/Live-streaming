@@ -45,7 +45,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     //添加图片映射，将所有访问 /img/userImages/** 的请求映射到 存放用户头像的文件夹下
     registry.addResourceHandler(FileConstant.VIRTUAL_IMG_PATH).addResourceLocations(USER_IMAGES_PATH);
     //添加视频映射，将所有访问 /video/** 的请求映射到 存放用户头像的文件夹下
-    registry.addResourceHandler(FileConstant.VIDEO_PATH).addResourceLocations(VIDEO_PATH);
+    registry.addResourceHandler(FileConstant.VIRTUAL_VIDEO_PATH).addResourceLocations(VIDEO_PATH);
   }
 
   /**

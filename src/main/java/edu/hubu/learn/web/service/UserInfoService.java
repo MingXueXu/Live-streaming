@@ -2,6 +2,7 @@ package edu.hubu.learn.web.service;
 
 import edu.hubu.learn.dao.UserInfoDao;
 import edu.hubu.learn.entity.UserInfo;
+import edu.hubu.learn.web.common.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,15 +15,12 @@ import java.util.List;
  * @since 2019-10-07 21:32
  **/
 @Service
-public class UserInfoService {
-  @Autowired
-  UserInfoDao userInfoDao;
+public class UserInfoService extends BaseService<UserInfo, Long> {
+    @Autowired
+    UserInfoDao userInfoDao;
 
-  /**
-   * 调用 dao 层的方法
-   * @return
-   */
-  public List<UserInfo> selectAll(){
-    return userInfoDao.selectAll();
-  }
+    @Override
+    public List<UserInfo> selectAll(){
+        return userInfoDao.selectAll();
+    }
 }
