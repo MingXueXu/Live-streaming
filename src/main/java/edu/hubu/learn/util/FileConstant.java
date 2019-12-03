@@ -1,6 +1,9 @@
 package edu.hubu.learn.util;
 
 import org.springframework.stereotype.Component;
+import org.springframework.util.ResourceUtils;
+
+import java.io.FileNotFoundException;
 
 /**
  * @moduleName: FileConstant
@@ -14,7 +17,15 @@ public final class FileConstant {
   /**
    * 文件上传  根目录
    */
-  public static final String UPLOAD_PATH = "D:/JavaProgram/File/";
+  public static String UPLOAD_PATH;
+
+  static {
+    try {
+      UPLOAD_PATH = ResourceUtils.getURL("classpath:").getPath() + "../../../resources/main/static/";
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    }
+  }
 
   /**
    * 用户头像保存的目录

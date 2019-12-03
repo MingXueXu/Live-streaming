@@ -19,8 +19,4 @@ public class UserInfoService extends BaseService<UserInfo, Long> {
     @Autowired
     UserInfoDao userInfoDao;
 
-    @Override
-    public List<UserInfo> selectAll(){
-        return userInfoDao.selectAll();
-    }
 }

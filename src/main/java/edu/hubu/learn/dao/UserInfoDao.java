@@ -4,6 +4,7 @@ import edu.hubu.learn.entity.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -22,10 +23,13 @@ public interface UserInfoDao extends JpaRepository<UserInfo,Long> {
    */
 
   /**
-   * 查询 user_info表中的所有数据
-   * @return List<UserInfo>
+   * 根据用户名获取用户头像
+   * @param username 用户名
+   * @return 头像路径
    */
   @Modifying
-  @Query(value = "select * from user_info",nativeQuery = true)
-  List<UserInfo> selectAll();
+  @Query(value = "select user_img_url from user_info where username = :username", nativeQuery = true)
+  String getUserImgUrl(@Param("username") String username);
+
+
 }

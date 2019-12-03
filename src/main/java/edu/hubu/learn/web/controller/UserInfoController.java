@@ -5,8 +5,6 @@ import edu.hubu.learn.web.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import static edu.hubu.learn.util.PageConstant.CURRENT_PAGE;
-import static edu.hubu.learn.util.PageConstant.PAGE_SIZE;
 
 /**
  * @moduleName UserInfoController

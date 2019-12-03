@@ -3765,3 +3765,37 @@ Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgr
 2019-12-03 20:51:35.319  INFO 3008 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
 2019-12-03 20:51:44.035  INFO 3008 --- [http-nio-8888-exec-5] e.hubu.learn.util.ControllerTimerAspect  : method: Page edu.hubu.learn.web.service.UserInfoService.selectAll() cost:118ms
 2019-12-03 20:51:44.036  INFO 3008 --- [http-nio-8888-exec-5] e.hubu.learn.util.ControllerTimerAspect  : method: Page edu.hubu.learn.web.service.UserInfoService.selectAll() cost:120ms
+2019-12-03 21:30:04.083  INFO 25552 --- [restartedMain] edu.hubu.learn.Application               : Starting Application on LAPTOP-EPU3S7IJ with PID 25552 (D:\JavaProgram\Springboot\Live-streaming\build\classes\java\main started by Alone-Wolf in D:\JavaProgram\Springboot\Live-streaming)
+2019-12-03 21:30:04.083  INFO 25552 --- [restartedMain] edu.hubu.learn.Application               : The following profiles are active: dev
+2019-12-03 21:30:04.123  INFO 25552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 21:30:04.123  INFO 25552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 21:30:05.133  INFO 25552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 21:30:05.203  INFO 25552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 1 repository interfaces.
+2019-12-03 21:30:05.563  INFO 25552 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f36b518] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 21:30:06.093  INFO 25552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-12-03 21:30:06.123  INFO 25552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 21:30:06.123  INFO 25552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-12-03 21:30:06.293  INFO 25552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 21:30:06.293  INFO 25552 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2170 ms
+2019-12-03 21:30:06.413  INFO 25552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 21:30:06.543  INFO 25552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 21:30:06.633  INFO 25552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 21:30:06.754  INFO 25552 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-03 21:30:06.818  INFO 25552 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-12-03 21:30:06.818  INFO 25552 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-03 21:30:06.948  INFO 25552 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-03 21:30:07.073  INFO 25552 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-03 21:30:07.738  INFO 25552 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 21:30:08.413  INFO 25552 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-03 21:30:08.573  WARN 25552 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 21:30:08.973  INFO 25552 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-03 21:30:08.993  INFO 25552 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-03 21:30:09.319  INFO 25552 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-03 21:30:09.483  INFO 25552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-12-03 21:30:09.493  INFO 25552 --- [restartedMain] edu.hubu.learn.Application               : Started Application in 5.93 seconds (JVM running for 7.416)
+2019-12-03 21:31:50.601  INFO 25552 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 21:31:50.602  INFO 25552 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 21:31:50.615  INFO 25552 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-03 21:31:50.708  WARN 25552 --- [http-nio-8888-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
