@@ -15,6 +15,6 @@ public class Collection {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String videoid;
+    private String video_id;
     private String username;
 }

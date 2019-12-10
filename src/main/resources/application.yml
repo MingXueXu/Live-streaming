@@ -7,9 +7,15 @@ spring:
     cache: false
     request-context-attribute: request
   mvc:
+    static-path-pattern: /static/**
     view:
-      prefix: /templates/
-      suffix: .ftl
+     prefix: /templates/
+     suffix: .ftl
+  servlet:
+    multipart:
+      max-file-size: 128MB
+      max-request-size: 128MB
+      enabled: true
 
 logging:
   file: spring.log
@@ -23,4 +29,10 @@ logging:
         springframework: INFO
         springframework.security: INFO
       root: INFO
+
+pagehelper:
+  helperDialect: h2
+  params: count=countSql
+  reasonable: true
+  supportMethodsArguments: true
 
