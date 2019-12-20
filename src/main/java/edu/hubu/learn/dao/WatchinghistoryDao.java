@@ -7,10 +7,10 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import edu.hubu.learn.entity.VideoInfo;
+import edu.hubu.learn.entity.Watchinghistory;
 @Repository
-public interface VideoInfoDao extends JpaRepository<VideoInfo, Long> {
+public interface WatchinghistoryDao extends JpaRepository<Watchinghistory, Long> {
     @Modifying
-    @Query(value = "select * from videoInfo",nativeQuery = true)
-    List<VideoInfo> selectAll();
+    @Query(value = "select * from watchinghistory",nativeQuery = true)
+    List<Watchinghistory> selectAll();
 }

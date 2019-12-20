@@ -5,17 +5,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.hubu.learn.service.FileService;
+import edu.hubu.learn.service.CommentService;
 
 @RestController
-@RequestMapping("/file")
-public class FileRestController {
+@RequestMapping("/comment")
+public class CommentController {
 
     @Autowired
-    private FileService service;
+    private CommentService service;
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public Object getAll() {
-        return service.getFiles();
+        return service.getComments();
     }
 }
