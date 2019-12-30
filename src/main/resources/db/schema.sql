@@ -10,6 +10,7 @@ CREATE TABLE `user_info`(
     `age` int default null comment '吧龄',
      PRIMARY KEY (`id`)
 );
+ALTER TABLE `user_info` ADD UNIQUE (`username`);
 
 drop table if exists `video_info`;
 create table `video_info`(
@@ -22,6 +23,7 @@ create table `video_info`(
 `like_num` int default null comment '点赞数',
 primary key (`id`)
 );
+ALTER TABLE `video_info` ADD UNIQUE (`name`);
 
 drop table if exists `comment`;
 create table `comment`(
@@ -32,6 +34,7 @@ create table `comment`(
 `time` varchar (255) default null comment '评论时间',
 primary key (`id`)
 );
+ALTER TABLE `comment` ADD UNIQUE (`video_id`);
 
 drop table if exists `collection`;
 create table `collection`(
@@ -40,15 +43,14 @@ create table `collection`(
 `user_id` bigint default null comment '评论人id',
 primary key (`id`)
 );
+ALTER TABLE `collection` ADD UNIQUE (`video_id`);
 
-drop table if exists `watch_history`;
-create table `watch_history`(
+drop table if exists `watching_history`;
+create table `watching_history`(
 `id` bigint(20) not null AUTO_INCREMENT,
 `video_id` bigint default null comment '视频id',
 `user_id` bigint default null comment '评论人id',
 `time` varchar (255) default null comment '观看时间',
 primary key (`id`)
 );
-
-
-
+ALTER TABLE `watching_history` ADD UNIQUE (`video_id`);
