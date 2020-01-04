@@ -11,6 +11,6 @@ import edu.hubu.learn.entity.VideoInfo;
 @Repository
 public interface VideoInfoDao extends JpaRepository<VideoInfo, Long> {
     @Modifying
-    @Query(value = "select * from videoInfo",nativeQuery = true)
+    @Query(value = "select * from videoInfo",nativeQuery = true)//获取用户信息表内容
     List<VideoInfo> selectAll();
 }

@@ -34,12 +34,12 @@ public class UserInfoController {
       return modelAndView;
     } 
 
-    @RequestMapping(value = "login")
+    @RequestMapping(value = "login")//实现登录功能
     public ModelAndView login(UserInfo userInfo){
       String username = userInfo.getUsername();
       String password = userInfo.getPassword();
       int count = userInfoService.login(username, password);
-      if(count == 1){
+      if(count == 1){     //即数据库中存在该用户信息
         return new ModelAndView("redirect:/userInfo/index");
       }else{
         return new ModelAndView("redirect:/userInfo/fileName");

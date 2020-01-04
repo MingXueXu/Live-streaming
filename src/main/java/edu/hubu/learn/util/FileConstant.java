@@ -13,11 +13,11 @@ public final class FileConstant {
   static {
     try {
       UPLOAD_PATH = ResourceUtils.getURL("classpath:").getPath() + "../../../resources/main/static/";
-    } catch (FileNotFoundException e) {
+    } catch (final FileNotFoundException e) {
       e.printStackTrace();
     }
   }
-
+//上传地址信息
   public static final String IMG_FILE_NAME = "usersImages/";
 
   public static final String VIRTUAL_IMG_PATH = "img/**";

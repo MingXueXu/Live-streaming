@@ -21,7 +21,7 @@ public class WatchinghistoryService {
     }
 
     public List<Watchinghistory> getWatching_historys() {
-        return dao.findAll(new Sort(Direction.DESC, "id"));
+        return dao.findAll(new Sort(Direction.DESC, "id"));//按照id降序排列获取到的数据
     }
     
 }

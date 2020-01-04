@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class ControllerTimerAspect {
-
+//实现观看记录保存
     @Pointcut("execution(public * edu.hubu.learn.web.common.BaseService.*(..))")
     public void baseServicePointCut() {
     }

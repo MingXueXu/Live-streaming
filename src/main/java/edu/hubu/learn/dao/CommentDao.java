@@ -12,6 +12,6 @@ import edu.hubu.learn.entity.Comment;
 @Repository
 public interface CommentDao extends JpaRepository<Comment, Long> {
     @Modifying
-    @Query(value = "select * from comment",nativeQuery = true)
+    @Query(value = "select * from comment",nativeQuery = true)//获取评论表内容
     List<Comment> selectAll();
 }

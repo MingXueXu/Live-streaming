@@ -1551,3 +1551,57 @@ org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "        
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
 
+2020-01-04 16:48:24.096  INFO 13904 --- [restartedMain] edu.hubu.learn.Application               : Starting Application on DESKTOP-511CL7J with PID 13904 (started by 1007512569 in C:\新建文件夹\Live-streaming)
+2020-01-04 16:48:24.100  INFO 13904 --- [restartedMain] edu.hubu.learn.Application               : The following profiles are active: dev
+2020-01-04 16:48:24.243  INFO 13904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-04 16:48:24.243  INFO 13904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-04 16:48:27.671  INFO 13904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-04 16:48:28.001  INFO 13904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 298ms. Found 5 repository interfaces.
+2020-01-04 16:48:28.891  INFO 13904 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d9ed2c6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-04 16:48:31.344  INFO 13904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-01-04 16:48:31.498  INFO 13904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-04 16:48:31.501  INFO 13904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-01-04 16:48:32.354  INFO 13904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-04 16:48:32.356  INFO 13904 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8112 ms
+2020-01-04 16:48:33.435  INFO 13904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-04 16:48:34.499  INFO 13904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-04 16:48:34.940  INFO 13904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-04 16:48:35.765  INFO 13904 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-04 16:48:36.229  INFO 13904 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-04 16:48:36.239  INFO 13904 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-04 16:48:37.045  INFO 13904 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-04 16:48:37.737  INFO 13904 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-04 16:48:41.266  INFO 13904 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-04 16:48:46.098  INFO 13904 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-01-04 16:48:46.997  WARN 13904 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-04 16:48:48.288  INFO 13904 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-04 16:48:48.417  INFO 13904 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-04 16:48:48.574  INFO 13904 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-04 16:48:49.696  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingGET_1
+2020-01-04 16:48:49.706  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingHEAD_1
+2020-01-04 16:48:49.709  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingPOST_1
+2020-01-04 16:48:49.743  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingPUT_1
+2020-01-04 16:48:49.745  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingPATCH_1
+2020-01-04 16:48:49.747  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingDELETE_1
+2020-01-04 16:48:49.751  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingOPTIONS_1
+2020-01-04 16:48:49.754  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingTRACE_1
+2020-01-04 16:48:49.856  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingGET_2
+2020-01-04 16:48:49.858  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingHEAD_2
+2020-01-04 16:48:49.860  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingPOST_2
+2020-01-04 16:48:49.862  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingPUT_2
+2020-01-04 16:48:49.864  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingPATCH_2
+2020-01-04 16:48:49.866  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingDELETE_2
+2020-01-04 16:48:49.868  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingOPTIONS_2
+2020-01-04 16:48:49.870  INFO 13904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getFileNameUsingTRACE_2
+2020-01-04 16:48:50.013  INFO 13904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-01-04 16:48:50.020  INFO 13904 --- [restartedMain] edu.hubu.learn.Application               : Started Application in 27.754 seconds (JVM running for 29.781)
+2020-01-04 16:58:39.413  INFO 13904 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-04 16:58:39.414  INFO 13904 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-04 16:58:39.517  INFO 13904 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 101 ms
+2020-01-04 16:58:40.610  WARN 13904 --- [http-nio-8888-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /userInfo/css/base.css
+2020-01-04 16:58:41.290  WARN 13904 --- [http-nio-8888-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /userInfo/images/%E7%9B%B4%E6%92%AD%E7%99%BB%E5%BD%95.jpg
+2020-01-04 17:01:31.451  WARN 13904 --- [http-nio-8888-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90001, SQLState: 90001
+2020-01-04 17:01:31.467 ERROR 13904 --- [http-nio-8888-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Method is not allowed for a query. Use execute or executeQuery instead of executeUpdate; SQL statement:
+/* dynamic native SQL query */ select count(id) from user_info where username = ? and password = ? [90001-199]

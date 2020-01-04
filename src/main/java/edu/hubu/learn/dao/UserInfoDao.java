@@ -18,6 +18,6 @@ public interface UserInfoDao extends JpaRepository<UserInfo,Long> {
   String getUserImgUrl(@Param("username") String username);
 
   @Modifying
-  @Query(value = "select count(id) from user_info where username = :username and password = :password", nativeQuery = true)
+  @Query(value = "select count(id) from user_info where username = :username and password = :password", nativeQuery = true)//对数据库中出现的符合传入用户名密码的数据计数
   int login(@Param("username")String username, @Param("password") String password);
 }

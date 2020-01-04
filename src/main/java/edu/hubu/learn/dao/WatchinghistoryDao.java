@@ -11,6 +11,6 @@ import edu.hubu.learn.entity.Watchinghistory;
 @Repository
 public interface WatchinghistoryDao extends JpaRepository<Watchinghistory, Long> {
     @Modifying
-    @Query(value = "select * from watchinghistory",nativeQuery = true)
+    @Query(value = "select * from watchinghistory",nativeQuery = true)//获取观看历史表内容
     List<Watchinghistory> selectAll();
 }
