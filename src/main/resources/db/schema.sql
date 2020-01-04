@@ -18,7 +18,7 @@ create table `video_info`(
 `num` varchar (255) default null comment '视频的编号',
 `name` varchar (255) default null comment '视频名称',
 `video_url` varchar(255) default null comment '视频的映射路径',
-`user_id` bigint(20) default null comment '保存视频上传者的id',
+`username` bigint(20) default null comment '保存视频上传者的id',
 `time` varchar (255) default null comment '视频长传的时间',
 `like_num` int default null comment '点赞数',
 primary key (`id`)
@@ -29,18 +29,17 @@ drop table if exists `comment`;
 create table `comment`(
 `id` bigint(20) not null AUTO_INCREMENT,
 `video_id` bigint default null comment '视频id',
-`user_id` bigint default null comment '评论人id',
+`username` bigint default null comment '评论人id',
 `comment` varchar (1000) default null comment '评论内容',
 `time` varchar (255) default null comment '评论时间',
 primary key (`id`)
 );
-ALTER TABLE `comment` ADD UNIQUE (`video_id`);
 
 drop table if exists `collection`;
 create table `collection`(
 `id` bigint(20) not null AUTO_INCREMENT,
 `video_id` bigint default null comment '视频id',
-`user_id` bigint default null comment '评论人id',
+`username` bigint default null comment '评论人id',
 primary key (`id`)
 );
 ALTER TABLE `collection` ADD UNIQUE (`video_id`);
@@ -49,7 +48,7 @@ drop table if exists `watching_history`;
 create table `watching_history`(
 `id` bigint(20) not null AUTO_INCREMENT,
 `video_id` bigint default null comment '视频id',
-`user_id` bigint default null comment '评论人id',
+`username` bigint default null comment '评论人id',
 `time` varchar (255) default null comment '观看时间',
 primary key (`id`)
 );

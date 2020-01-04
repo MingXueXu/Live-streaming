@@ -25,4 +25,6 @@ public class UserInfo {
 
     private String personalizedLabels;
 
+    private int age;
+
 }
