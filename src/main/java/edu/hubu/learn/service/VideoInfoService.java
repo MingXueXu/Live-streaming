@@ -17,7 +17,7 @@ public class VideoInfoService {
     public VideoInfo getVideoInfo(Long id) {
         return dao.findById(id).get();
     }
-    public List<VideoInfo> getVideoInfo() {
+    public List<VideoInfo> getVideoInfos() {
         return dao.findAll(new Sort(Direction.DESC, "id"));
     }
 }

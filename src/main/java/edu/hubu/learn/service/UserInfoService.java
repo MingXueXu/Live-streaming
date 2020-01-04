@@ -12,4 +12,9 @@ public class UserInfoService extends BaseService<UserInfo, Long> {
     @Autowired
     UserInfoDao userInfoDao;
 
+    public int login(String username, String password){
+        return userInfoDao.login(username, password);
+    }
+
+
 }
