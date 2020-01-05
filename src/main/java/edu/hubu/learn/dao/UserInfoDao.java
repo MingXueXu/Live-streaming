@@ -20,4 +20,6 @@ public interface UserInfoDao extends JpaRepository<UserInfo,Long> {
   @Modifying
   @Query(value = "select count(id) from user_info where username = :username and password = :password", nativeQuery = true)
   int login(@Param("username")String username, @Param("password") String password);
+
+}
 }

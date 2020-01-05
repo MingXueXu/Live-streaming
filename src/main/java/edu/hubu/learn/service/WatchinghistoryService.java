@@ -16,7 +16,8 @@ public class WatchinghistoryService {
     @Autowired
     private WatchinghistoryDao dao;
 
-    public Watchinghistory getWatchinghistory(Long id) {
+
+    public static Watchinghistory getWatchinghistory(Long id) {
         return dao.findById(id).get();
     }
 
@@ -24,4 +25,16 @@ public class WatchinghistoryService {
         return dao.findAll(new Sort(Direction.DESC, "id"));
     }
     
+    public Watchinghistory addWatchinghistory(Watchinghistory watchinghistory) {
+        return dao.save(watchinghistory);
+    }
+
+    public void deleteWatchinghistory(Long id) {
+        dao.deleteById(id);
+    }
+
+    public void modifyWatchinghistory(Watchinghistory watchinghistory) {
+        dao.save(watchinghistory);
+    }
+
 }

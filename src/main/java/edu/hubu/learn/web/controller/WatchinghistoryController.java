@@ -1,5 +1,10 @@
 package edu.hubu.learn.web.controller;
 
+import java.io.File;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +35,15 @@ public class WatchinghistoryController {
     @RequestMapping(value = "Watchinghistory")
     public Watchinghistory Watchinghistory(Watchinghistory watchinghistory){
       return watchinghistory;
+    }
+
+    @RequestMapping("/list")
+    public ModelAndView Watchinghistorys() {
+        ModelAndView mav = new ModelAndView();
+        List<Watchinghistory> Watchinghistorys = WatchinghistoryService.getWatching_historys();
+        mav.addObject("Watchinghistorys", Watchinghistorys);
+        mav.setViewName("Watchinghistorys");
+        return mav;
     }
 
 

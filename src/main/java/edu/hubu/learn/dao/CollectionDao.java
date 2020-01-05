@@ -11,7 +11,9 @@ import edu.hubu.learn.entity.Collection;
 
 @Repository
 public interface CollectionDao extends JpaRepository<Collection, Long> {
+    
     @Modifying
     @Query(value = "select * from collection",nativeQuery = true)
     List<Collection> selectAll();
+
 }
